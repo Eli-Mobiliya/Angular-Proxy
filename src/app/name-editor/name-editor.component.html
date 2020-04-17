@@ -1,0 +1,12 @@
+<!-- <p>
+  name-editor works!
+</p> -->
+
+<label>
+  Name:
+  <!-- <input type="text" [formControl]="name" /> -->
+  <input type="text" [formControl]="name" required />
+</label>
+
+<p>Value: {{ name?.value | json }}</p>
+<p>Valid: {{ name?.valid | json }} </p>
